@@ -1,69 +1,158 @@
-# FPGA-Build-Challenge-Anjani-Kadambari
+# FPGA Build Challenge 2026
+### FPGA-Based Digital Design, Hardware Acceleration & Fault Diagnosis
+
+A collection of five FPGA design projects developed as part of the **V-SPACE FPGA Build Challenge 2026**, spanning serial communication, network-on-chip routing, adaptive arithmetic hardware, neuromorphic computing, and hardware fault diagnosis.
+
+---
 
 ## Team Information
 
-- **Team Name:** [Enter Team Name]
-- **Team Leader:** Anjani Kadambari
-- **Team Members:** [Enter Team Member Names]
-- **Registration Numbers:** [Enter Registration Numbers]
+| Field | Details |
+|---|---|
+| **Team Name** | LeadHerBoard |
+| **Team Leader** | Anjani Kadambari |
+| **Team Members** | Nedunuri Avinash | Peyyala Ganesh Krishna Vamshi
+| **Registration Numbers** | 23BEC0276 | 23BVD0009 | 23BVD0021 
 
-## Selected FPGA Board
+## Hardware Platform
 
-- **Board:** Terasic DE10-Nano Development Board
-- **FPGA:** Intel Cyclone V SoC
-- **Device:** 5CSEBA6U23I7
+- **Development Board:** Terasic DE10-Nano
+- **FPGA Device:** Intel Cyclone V SoC
+- **Device Part Number:** `5CSEBA6U23I7`
+- **Design Languages:** Verilog HDL and SystemVerilog
+- **Development Environment:** Intel Quartus Prime
 
-## Project Summary
+---
 
-### Experiment 1 — Beginner: UART Communication
+## Project Portfolio
 
-**Objective:** Implement UART (Universal Asynchronous Receiver/Transmitter) communication using Verilog HDL.
+### 01 · Beginner 1
+**FPGA-Based Self-Correcting UART with Real-Time Baud Detection**
 
-The design includes UART transmit and receive modules, baud-rate generation, synchronization, FIFO buffering, and error control. The project explores serial communication and digital system integration on an FPGA.
+Develops a UART communication architecture incorporating real-time baud-rate detection and correction mechanisms to improve serial communication reliability.
 
-### Experiment 2 — Beginner: Router Design
+**Key design components**
+- UART transmitter and receiver
+- Baud-rate detection and generation
+- Synchronization and FIFO buffering
+- Error-control logic
 
-**Objective:** Design a digital router using Verilog HDL.
+**Focus:** Reliable serial communication and modular RTL design.
 
-The design includes routing computation, buffering, switching, and switch allocation modules. The project explores packet routing and the fundamental building blocks of on-chip communication networks.
+**Project files:** [`Experiment-1-Beginner/`](Experiment-1-Beginner/)
 
-### Experiment 3 — Intermediate: Multiply-Accumulate (MAC) Unit
+---
 
-**Objective:** Implement a configurable Multiply-Accumulate (MAC) unit using Verilog HDL.
+### 02 · Beginner 2
+**FPGA-Based Congestion-Aware Packet Router with Dynamic Arbitration**
 
-The design includes a MAC core and precision control. The project explores arithmetic datapaths and configurable digital computation for applications such as digital signal processing.
+Implements a packet-routing architecture designed to manage packet movement through routing computation, buffering, switching, and arbitration.
 
-### Experiment 4 — Intermediate: Spiking Neural Network (SNN) Accelerator
+**Key design components**
+- Routing computation
+- Input buffering
+- Switching architecture
+- Switch allocation and arbitration
 
-**Objective:** Explore FPGA-based hardware acceleration for Spiking Neural Networks (SNNs).
+**Focus:** Packet management, routing decisions, and efficient digital communication.
 
-The project investigates neuron-model implementation and computational optimization for neuromorphic computing, with a focus on efficient hardware architectures for biomedical signal-processing applications.
+**Project files:** [`Experiment-2-Beginner/`](Experiment-2-Beginner/)
 
-### Experiment 5 — Advanced: Hardware Failure Diagnosis
+---
 
-**Objective:** Develop an RTL-based hardware failure diagnosis architecture.
+### 03 · Intermediate 1
+**FPGA-Based Adaptive-Precision MAC Accelerator for Energy-Efficient Computing**
 
-The design explores fault-injection cells, scan control, fault-mask collection, and cone-intersection logic to investigate fault detection and diagnosis in digital circuits.
+Explores a configurable Multiply-Accumulate (MAC) accelerator using a dedicated arithmetic datapath and precision-control logic.
 
-## Tools and Technologies
+**Key design components**
+- MAC computational core
+- Adaptive precision control
+- Configurable arithmetic operations
+- FPGA-oriented datapath design
 
-- Verilog HDL and SystemVerilog
-- Intel Quartus Prime
-- RTL design and simulation
-- FPGA synthesis and implementation
-- Terasic DE10-Nano development board
+**Focus:** Investigating the trade-offs between arithmetic precision, hardware cost, and energy-efficient computation.
+
+**Project files:** [`Experiment-3-Intermediate/`](Experiment-3-Intermediate/)
+
+---
+
+### 04 · Intermediate 2
+**FPGA-Based Event-Driven Spiking Neural Network (SNN) Accelerator for Handwritten Digit Recognition**
+
+Explores event-driven neuromorphic computing through a Spiking Neural Network (SNN) architecture for handwritten digit recognition.
+
+**Key design focus**
+- Spiking-neuron computation
+- Event-driven processing
+- Neural-network hardware acceleration
+- Efficient implementation of computational workloads
+
+**Focus:** Exploring neuromorphic architectures and their potential for hardware-efficient inference.
+
+**Project files:** [`Experiment-4-Intermediate/`](Experiment-4-Intermediate/)
+
+---
+
+### 05 · Advanced
+**FPGA-Based Autonomous Hardware Failure Diagnosis and Fault Localization Engine**
+
+Develops an RTL-based architecture for investigating hardware fault detection and localization in digital circuits.
+
+**Key design components**
+- Fault-injection cells
+- Scan-control logic
+- Fault-mask collection
+- Cone-intersection logic
+- Fault localization architecture
+
+**Focus:** Structured fault analysis and logic-based hardware diagnosis.
+
+**Project files:** [`Experiment-5-Advanced/`](Experiment-5-Advanced/)
+
+---
 
 ## Repository Structure
 
-- `Experiment-1-Beginner/` — UART Communication
-- `Experiment-2-Beginner/` — Router Design
-- `Experiment-3-Intermediate/` — MAC Unit
-- `Experiment-4-Intermediate/` — SNN Accelerator
-- `Experiment-5-Advanced/` — Hardware Failure Diagnosis
-- `Final_Report/` — Consolidated project report
+```text
+FPGA-Build-Challenge-Anjani-Kadambari/
+├── README.md
+├── Experiment-1-Beginner/
+│   ├── RTL/
+│   ├── Testbench/
+│   ├── Simulation/
+│   ├── Images/
+│   ├── Documentation/
+│   └── Video_Link.txt
+├── Experiment-2-Beginner/
+├── Experiment-3-Intermediate/
+├── Experiment-4-Intermediate/
+├── Experiment-5-Advanced/
+└── Final_Report/
+    └── LeadHerBoard_Final_Report.pdf
+```
 
-Each experiment folder is intended to contain its RTL source files, testbenches, simulation results, design images, documentation, and demonstration video link as applicable.
+Each experiment directory is intended to organize the corresponding RTL source files, testbenches, simulation evidence, design images, documentation, and demonstration link.
 
-## Acknowledgment
+## Tools & Technologies
 
-This repository documents the team's work for the **V-SPACE FPGA Build Challenge 2026**. It presents the design approach, implementation, and learning outcomes of five FPGA-based digital design experiments.
+- **HDL:** Verilog HDL, SystemVerilog
+- **FPGA Design:** Intel Quartus Prime
+- **Design & Analysis:** RTL design, module hierarchy, synthesis, and implementation
+- **Hardware Platform:** Terasic DE10-Nano Development Board
+
+## Project Goals
+
+Across the five experiments, the portfolio explores key digital-design concepts:
+
+- Reliable communication interfaces
+- Packet routing and arbitration
+- Configurable arithmetic hardware
+- Neuromorphic computing
+- Hardware fault diagnosis and localization
+
+Together, these projects provide exposure to modular RTL development and FPGA-oriented system design across multiple application areas.
+
+---
+
+*Developed for the V-SPACE FPGA BuildX Challenge 2026.*
