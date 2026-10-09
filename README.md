@@ -11,8 +11,8 @@ A collection of five FPGA design projects developed as part of the **V-SPACE FPG
 |---|---|
 | **Team Name** | LeadHerBoard |
 | **Team Leader** | Anjani Kadambari |
-| **Team Members** | Nedunuri Avinash | Peyyala Ganesh Krishna Vamshi
-| **Registration Numbers** | 23BEC0276 | 23BVD0009 | 23BVD0021 
+| **Team Members** | Nedunuri Avinash, Peyyala Ganesh Krishna Vamshi |
+| **Registration Numbers** | 23BEC0276, 23BVD0009, 23BVD0021 | 
 
 ## Hardware Platform
 
