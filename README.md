@@ -1,7 +1,7 @@
 # FPGA Build Challenge 2026
 ### FPGA-Based Digital Design, Hardware Acceleration & Fault Diagnosis
 
-A collection of five FPGA design projects developed as part of the **V-SPACE FPGA Build Challenge 2026**, spanning serial communication, network-on-chip routing, adaptive arithmetic hardware, neuromorphic computing, and hardware fault diagnosis.
+A collection of five FPGA design projects developed as part of the **V-SPACE FPGA BuildX Challenge 2026**, spanning serial communication, network-on-chip routing, adaptive arithmetic hardware, neuromorphic computing, and hardware fault diagnosis.
 
 ---
 
